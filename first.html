@@ -10,9 +10,9 @@
 <body>
 	<div class="box">
 		<form id="form" method="get" action=" " target="_self">
-			<h2>Form Validation</h2>
+			<h2>Registration Form</h2>
 			<div class="row">
-               			<label for="fname">First Name: </label>
+               			<label for="fname">First Name: </label >
                 		<input id="fname" name="fname" type="text">
                 		<div class="error"></div>
             		</div>
@@ -24,13 +24,12 @@
 			<div class="rowRadio">
                			
 				<div><label id="gender">Gender:</label></div>
-				<div><input type="radio"  name="male" value="Male" />
+				<div><input id="rd1" type="radio"  name="sex" value="Male" />
                			<span>Male</span></div>
-				<div><input type="radio" name="female" value="Female" />
+				<div><input id="rd2" type="radio"  value="female" name="sex"/>
                			<span>Female</span></div>
 				<div class="error"></div>
-            		</div>
-			
+			</div>
             		<div class="row">
                			<label for="email">Email:</label>
                 		<input id="email" name="email" type="text">
@@ -57,7 +56,7 @@
             		</div>
 			<div class="rowRadio">
                			
-				<div><label id="gender">Languages known:</label></div>
+				<div><label id="language">Languages known:</label></div>
 				<div><input type="checkbox"  value="Malayalam"/>
                			<span>Malayalam</span></div>
 				<div><input type="checkbox"  value="English" />

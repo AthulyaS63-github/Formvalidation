@@ -77,6 +77,10 @@ body{
 	padding: 10px;
 	width: 90%;
 }
+.radio p input label{
+	margin-top:10px;
+}
+
 .rowRadio{
     display: flex;
     justify-content:space-between;
