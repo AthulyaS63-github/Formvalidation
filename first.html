@@ -1,86 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Form Validation</title>
-	<link rel="stylesheet" href="css/style.css" />
-	<script defer src="js/formValidation.js"></script>
-</head>
-<body>
-	<div class="box">
-		<form id="form" method="get" action=" abc.html" target="_self">
-			<h2>Registration Form</h2>
-			<div class="row">
-               			<label for="fname">First Name: </label >
-                		<input id="fname" name="fname" type="text">
-                		<div class="error"></div>
-            		</div>
-			<div class="row">
-               			<label for="lname">Last Name: </label>
-                		<input id="lname" name="lname" type="text">
-                		<div class="error"></div>
-            		</div>
-			<div class="rowRadio">
-               			
-				<div><label id="gender">Gender:</label></div>
-				<div><input id="rd1" type="radio"  name="sex" value="Male" />
-               			<span>Male</span></div>
-				<div><input id="rd2" type="radio"  value="female" name="sex"/>
-               			<span>Female</span></div>
-				<div class="error"></div>
-			</div>
-            		<div class="row">
-               			<label for="email">Email:</label>
-                		<input id="email" name="email" type="text">
-                		<div class="error"></div>
-            		</div>
-			<div class="row">
-                		<label for="password">Password:</label>
-                		<input id="password" name="password" type="password">
-                		<div class="error"></div>
-            		</div>
-            		
-			
-			<div class="row">
-                		<label for="address">Address:</label>
-                		<textarea id="address" name="address"></textarea>
-                		<div class="error"></div>
-            		</div>
-			
-			
-			<div class="row">
-                		<label for="num">Ph no:</label>
-                		<input id="num" name="phoneNum" type="number">
-                		<div class="error"></div>
-            		</div>
-			<div class="rowRadio">
-               			
-				<div><label id="language">Languages known:</label></div>
-				<div><input type="checkbox"  value="Malayalam"/>
-               			<span>Malayalam</span></div>
-				<div><input type="checkbox"  value="English" />
-               			<span>English</span></div>
-				<div><input type="checkbox"  value="Hindi" />
-               			<span>Hindi</span></div>
-				<div class="error"></div>
-            		</div>
-			<div class="rowRadio">
-               			
-				<div><label id="place">district:</label></div>
-				<div><select name="country">
-                  			<option selected="" value="Default">(Please select a district)</option>
-                  			<option value="AF">TVM</option>
-                  			<option value="AL">KOCHI</option>
-                  			<option value="DZ">KALICUT</option>
-                  			<option value="AS">KOTTAYAM</option>
-                  			<option value="AD">IDUKKI</option>
-               			</select></div>
-				<div class="error"></div>
-            		</div>
-            		
-            		<button type="submit" onclick="validate()">Sign Up</button>
-		</form>
-	</div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/formValidation.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <form id="form" method="get" action=" abc.html" target="_self">
+        <h2>Registration Form</h2>
+        <div class="row">
+          <label for="fname">First Name: </label>
+          <input id="fname" name="fname" type="text">
+          <div class="error"></div>
+        </div>
+        <div class="row">
+          <label for="lname">Last Name: </label>
+          <input id="lname" name="lname" type="text">
+          <div class="error"></div>
+        </div>
+        <div class="rowRadio">
+          <label id="gender">Sex:</label>
+          <div class="error"></div>
+          <input id="rd1" type="radio" name="sex" value="Male" />
+          <span>Male</span>
+          <input id="rd2" type="radio" name="sex" value="Female" />
+          <span>Female</span>
+	  
+        </div>
+        <div class="row">
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="text">
+          <div class="error"></div>
+        </div>
+        <div class="row">
+          <label for="password">Password:</label>
+          <input id="password" name="password" type="password">
+          <div class="error"></div>
+        </div>
+        <div class="row">
+          <label for="address">Address:</label>
+	 <div class="error"></div>
+          <textarea id="address" name="address"></textarea>
+         
+        </div>
+        <div class="row">
+          <label for="num">Ph no:</label>
+          <input id="num" name="phoneNum" type="number">
+          <div class="error"></div>
+        </div>
+        <div class="rowRadio">
+           <label id="language">Languages known:</label>
+           <div class="error"></div>
+          <input type="checkbox" value="Malayalam" name="lan" id="lan1" />
+          <span>Malayalam</span>
+         <input type="checkbox" value="English" name="lan"  id="lan2"/>
+         <span>English</span>
+          <input type="checkbox" value="Hindi" name="lan" id="lan3"/>
+          <span>Hindi</span>
+       </div>
+        <div class="rowRadio">
+           <label id="place">district:</label>
+             <div class="error"></div>
+             <select name="country">
+               <option selected="" value="Default">(Please select a district)</option>
+               <option value="AF" name="tv" id="pl1">TVM</option>
+               <option value="AL" name="ko" id="pl2">KOCHI</option>
+               <option value="DZ" name="kal" id="pl3">KALICUT</option>
+               <option value="AS" name="kot" id="pl4">KOTTAYAM</option>
+               <option value="AD" name="id" id="pl5">IDUKKI</option>
+             </select>
+         </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
 </html>

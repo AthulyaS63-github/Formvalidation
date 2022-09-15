@@ -4,6 +4,7 @@ const lname = document.getElementById('lname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const num = document.getElementById('num');
+const address = document.getElementById('address');
 form.addEventListener('submit', e => {
     e.preventDefault();
     validateInputs();
@@ -41,8 +42,12 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const numValue = num.value.trim();
-    var msex=document.getElementById("rd1");
-    var fsex=document.getElementById("rd2");
+    var msex = document.getElementById("rd1");
+    var fsex = document.getElementById("rd2");
+    var mal = document.getElementById("lan1");
+    var eng= document.getElementById("lan2");
+    var hin= document.getElementById("lan3");
+   
     if(fnameValue === '') {
         setError(fname, 'First Name is required');
     } else {
@@ -80,10 +85,15 @@ const validateInputs = () => {
     }
     if(msex.checked == true || fsex.checked == true){
 		setSuccess(msex);
-     }
-     else{
-	  setError(msex,"select any one");
 	}
-
-
+	else{
+		setError(msex,"select any one");
+	}
+      if(mal.checked == true || eng.checked == true ||eng.checked == true){
+		setSuccess(mal);
+	}
+	else{
+		setError(mal,"select any one");
+	}
+	
 };
